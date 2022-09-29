@@ -8,11 +8,10 @@ function App() {
   return (
     <>
    <Navbar/>
-   <div className="container my-1 ">
+   <div className="container ">
    <h2>Runner's Workout</h2>
    </div>
-   <Corousel />
-  
+   <Corousel/>
    </>
   );
 }
