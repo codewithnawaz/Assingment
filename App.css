@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.navbar {
+  --bs-navbar-padding-y: 0.5rem;
+  font-size: 1.5vh;
+  font-weight: bold;
+  border-bottom: 4px solid rgb(207, 223, 202);
+  box-shadow: 3px 4px #f0eeee;
+
+}
+
+.Container {
+  margin: auto;
+  width: 83%;
+  height: 40vh;
+
+}
+
+.container {
+  font-family: sans-serif;
+  margin-top: 80px;
+  margin-bottom: -80px;
+  margin-left: 200px;
+ 
+}
+
+body,ul,h1,h2,p{  
+  margin: 0;
+   padding: 0;
+  
+}
+li{
+  list-style-type: none;
+}
+img{
+  vertical-align: top;
+}
+/* body{
+  background-color: #111;
+  color: #999;
+} */
+
+.wrapper{
+  width: 70%;
+  margin: 100px auto;
+  border: 1px solid black;
+}
+  
+
+.title{
+  margin-bottom: 1em;
+  width: max-content;
+  letter-spacing: 0.4em;
+  position: relative;
+}
+.title::before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.2em;
+  height: 0.2em;
+  margin-right: 0.4em;
+  background-color: currentColor;
+}
+.title:hover{
+  color: white;
+}
+.Column {
+  display: flex;
+  height: 59vh;
+ 
+}
+
+.Column-item{
+  width: 33.3333333%;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  transition: all .4s;
+  opacity: 0.4s;
+  position: relative;
+}
+.Column-item:hover {
+  width: 76%;
+  opacity: 1;
+  transform: scale(01);
+}
+.Column-item-cover {
+  flex-shrink: 0;
+  filter: brightness(70%);
+  
+}
+.Column-item-contents{
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  
+
+}
+.Column-item-contents h2 {
+  margin-top: 7px;
+  letter-spacing: 0.1em;
+  font-size: large;
+  font-family: sans-serif;
+}
